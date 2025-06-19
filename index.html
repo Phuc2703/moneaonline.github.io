@@ -457,11 +457,9 @@
     </footer>
     
     <script src="index.js" defer> </script>
-    <script type="text/javascript">
-            var uid = '468806';
-            var wid = '740923';
-            var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-            pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
+    <script>if (window.location.pathname.includes('.html')) {
+                window.location.href = window.location.pathname.replace('.html', '');
+                }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
