@@ -227,3 +227,16 @@ document.querySelectorAll('[data-fulltitle]').forEach(el => {
         
         // Current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
+function visitWebsite(websiteId, url) {
+    // Hiển thị thông báo
+    const notification = document.getElementById('notification');
+    notification.style.display = 'block';
+    
+    // Ẩn thông báo sau 2 giây
+    setTimeout(() => {
+        notification.style.display = 'none';
+    }, 2000);
+    
+    // Chuyển hướng đến URL
+    window.open(url, '_blank');
+}
